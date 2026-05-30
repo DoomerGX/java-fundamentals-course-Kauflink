@@ -1,4 +1,4 @@
-# java-fundamentals-course-[nombre-del-equipo]
+# java-fundamentals-course-Kauflink
 
 Repositorio de código fuente del curso **Fundamentos de Java para Principiantes**, elaborado como parte del trabajo complementario del curso 1ASI0729 Desarrollo de Aplicaciones Open Source — Universidad Peruana de Ciencias Aplicadas, período 202610.
 
