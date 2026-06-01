@@ -1,0 +1,30 @@
+modules = ["java-graalvm22.3"]
+[agent]
+expertMode = true
+stack = "BEST_EFFORT_FALLBACK"
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run Lesson 1"
+
+[[workflows.workflow]]
+name = "Run Lesson 1"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mkdir -p out && javac starter-files/Lesson1_HelloWorld.java -d out && java -cp out Lesson1_HelloWorld"
+
+[workflows.workflow.metadata]
+outputType = "console"
